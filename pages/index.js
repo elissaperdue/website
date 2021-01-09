@@ -18,21 +18,21 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <h3><img alt="" src={"fitbit.png"} /></h3>
+            <p>Fitness betting app to help reach daily step goals</p>
           </a>
 
           <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+            <h3><img alt="" src={"Amazon-Logo.png"} /></h3>
+            <p>Incoming SDE intern at Amazon NYC Summer 2021</p>
           </a>
 
           <a
             href="https://github.com/vercel/next.js/tree/master/examples"
             className={styles.card}
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            <h3><img alt="" src={"ng.svg"} /></h3>
+            <p>Summer SWE Intern on H-1 Helicopter Woodland Hills, CA</p>
           </a>
 
           <a
@@ -41,7 +41,7 @@ export default function Home() {
           >
             <h3><img alt="" src={"hacksc_logo.png"} /></h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              VP and Director of Sponsorship for USC's premier annual hackathon
             </p>
             
 
@@ -55,6 +55,11 @@ export default function Home() {
           href="https://github.com/elissaperdue" target="_blank"
         >
         <img alt="" src={"GitHub-Mark.png"}/>
+        </a>
+        <a 
+          href="https://github.com/elissaperdue" target="_blank"
+        >
+        <img alt="" src={"linkedin.png"}/>
         </a>
       </footer>
     </div>
