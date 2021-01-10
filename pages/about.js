@@ -23,20 +23,39 @@ export default function About() {
 
        <div className={styles.container}>
            <cols>
-           <a className={styles.card}>
-            <h3><img alt="" src={"Amazon-Logo.png"} /></h3>
-            <p>Incoming SDE intern at Amazon NYC Summer 2021</p>
+      
+           <a className={styles.paper}>
+            <h3><img alt="" src={"usc-logo.png"} height="50"/></h3>
+            <p>Bachelors of Science, Computer Science</p>
+            <p>Expected Grad: May 2022</p>
           </a>
-          <a className={styles.card}>
-            <h3><img alt="" src={"Amazon-Logo.png"} /></h3>
-            <p>Incoming SDE intern at Amazon NYC Summer 2021</p>
+          <a className={styles.paper}>
+            <alignR>
+                <h3><img alt="" src={"hacksc_logo.png"} height="50"/></h3>
+                <a 
+                href="https://github.com/HackSC" target="_blank"
+                >
+                <img alt="" src={"GitHub-Mark.png"} height="20"/>
+                </a>
+            </alignR>
+      
+            <alignR>
+                <p>Vice President</p> 
+                <p>2020-Present</p>
+            </alignR>
+            <alignR>
+                <p>Sponsorship Lead</p>  
+                <p>2019-Present</p>
+            </alignR>
+            <alignR>
+                <p>Engineering</p> 
+                <p>2020-Present</p>
+            </alignR>
+           
           </a>
-          <a className={styles.card}>
-            <h3><img alt="" src={"Amazon-Logo.png"} /></h3>
-            <p>Incoming SDE intern at Amazon NYC Summer 2021</p>
-          </a>
+          
               
-           </cols>
+            </cols>
      
             <div class={styles.headshot}>
                     <img alt="" src="headshot.jpg" />

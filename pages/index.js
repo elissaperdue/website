@@ -24,7 +24,9 @@ export default function Home() {
       <main className={styles.main}>
 
         <h1 className={styles.title}>
-          Welcome to <a href="https://website-git-master.elissaperdue.vercel.app/">elissaperdue.com</a>
+          <a href="https://website-git-master.elissaperdue.vercel.app/">elissa perdue </a> 
+          <br/>
+          student and software developer
         </h1>
 
 
@@ -71,7 +73,7 @@ export default function Home() {
         <a 
           href="https://github.com/elissaperdue" target="_blank"
         >
-        <img alt="" src={"GitHub-Mark.png"}/>
+        <img alt="" src={"GitHub-Mark.png"} height="20"/>
         </a>
         <a 
           href="https://www.linkedin.com/in/elissaperdue/" target="_blank"

@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-
 html,
 body {
   padding: 0;
   margin: 0;
   background: #57787b;
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
 }
 
 a {
@@ -15,7 +14,12 @@ a {
 }
 
 
+@font-face {
+  font-family: 'Roboto Mono', monospace;
+  src: url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+}
 
 * {
+  font-family: 'Roboto Mono', monospace;
   box-sizing: border-box;
 }
