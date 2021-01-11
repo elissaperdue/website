@@ -36,6 +36,11 @@ export default function About() {
           </a>
 
           <a className={styles.paper}>
+            <h3><img alt="" src={"Amazon-Logo.png"} height="50"/></h3>
+            <p>Incoming SDE Intern</p>
+          </a>
+
+          <a className={styles.paper}>
             <alignR>
                 <h3><img alt="" src={"hacksc_logo.png"} height="50"/></h3>
                 <a 
@@ -68,9 +73,7 @@ export default function About() {
         {/* <div class={styles.headshot}>
                     <img alt="" src="headshot.jpg" />
             </div> */}
-            <button>
-                Download PDF
-            </button>
+            
         </cols>
             
         </div> 
