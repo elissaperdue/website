@@ -31,8 +31,34 @@ export default function About() {
           </a>
 
           <a className={styles.paper}>
-            <h3><img alt="" src={"ng.svg"} height="50"/></h3>
-            <p>Software Engineer Intern</p>
+            <info>
+                <h3><img alt="" src={"hacksc_logo.png"} height="50"/></h3>
+                <a 
+                href="https://github.com/HackSC" target="_blank"
+                >
+                <img alt="" src={"GitHub-Mark.png"} height="20"/>
+                </a>
+            </info>
+      
+            <info>
+                <p>Sponsorship Lead</p>  
+                <p>2019-Present</p>
+            </info>
+            <info>
+                <p>Vice President</p> 
+                <p>2020-Present</p>
+            </info>
+           
+            <info>
+                <p>Engineering</p> 
+                <p>2020-Present</p>
+            </info>
+           
+          </a>
+
+          <a className={styles.paper}>
+            {/* <h3><img alt="" src={"Amazon-Logo.png"} height="50"/></h3>
+            <p>Incoming SDE Intern</p> */}
           </a>
 
           <a className={styles.paper}>
@@ -41,34 +67,11 @@ export default function About() {
           </a>
 
           <a className={styles.paper}>
-            <alignR>
-                <h3><img alt="" src={"hacksc_logo.png"} height="50"/></h3>
-                <a 
-                href="https://github.com/HackSC" target="_blank"
-                >
-                <img alt="" src={"GitHub-Mark.png"} height="20"/>
-                </a>
-            </alignR>
-      
-            <alignR>
-                <p>Sponsorship Lead</p>  
-                <p>2019-Present</p>
-            </alignR>
-            <alignR>
-                <p>Vice President</p> 
-                <p>2020-Present</p>
-            </alignR>
-           
-            <alignR>
-                <p>Engineering</p> 
-                <p>2020-Present</p>
-            </alignR>
-           
+            <h3><img alt="" src={"ng.svg"} height="50"/></h3>
+            <p>Software Engineer Intern</p>
           </a>
 
-         
-
-            </cols>
+         </cols>
         <cols>
         {/* <div class={styles.headshot}>
                     <img alt="" src="headshot.jpg" />
