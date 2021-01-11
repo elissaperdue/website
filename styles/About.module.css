@@ -1,11 +1,11 @@
 .topnav {
+    background-color: #F6ECE3;
     overflow: hidden;
-    background-color: #57787b;
   }
   
   .topnav a {
     float: left;
-    color: #faf1e0; 
+    color: #33344e; 
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -13,7 +13,7 @@
   }
   
   .topnav a:hover {
-    color: #f6a982;
+    color: #e07a5f;
     text-decoration: none;
   }
   
@@ -23,11 +23,12 @@
   }
   
   .container {
-    background: #77a4a8;
+    background-color: #F6ECE3;
     min-height: 100vh;
     padding: 0 0.5rem;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -39,6 +40,7 @@
     min-height: 100vh;
     padding: 0 0.5rem;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -130,7 +132,7 @@
 
 /* Diagonal stacked paper effect */
 .paper {
-    background-color: #faf1e0;
+    /* background-color: #faf1e0; */
     /* Need position to allow stacking of pseudo-elements */
     position: relative;
     /* Padding for demo purposes */
@@ -141,11 +143,10 @@
   
   .paper,
   .paper::before{
-    /* Add shadow to distinguish sheets from one another */
     /* box-shadow: 2px 1px 1px rgba(0,0,0,0.15); */
     border-radius: 10px;
-    border: 2px solid black;
-    background-color: #faf1e0;
+    border: 2px solid #33344e;
+    background-color: #fff9ea;
     }
   
   .paper::before{
@@ -163,15 +164,15 @@
   }
   
 
-  .paper img {
-  
+.paper img {
+    /* -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);*/
     transition: transform 0.5s ease-out;
     perspective: 500px;
-
-    }
+}
 
 .paper p {
-    color: grey;
+    color: #33344e;
     margin: 0;
     font-size: 1.25rem;
     line-height: 1.5;
@@ -195,74 +196,111 @@
 .paper:active {
   text-decoration: none;
 }
-  
-  .card {
-    margin: 1rem;
-    flex-basis: 45%;
-    padding: 1.5rem;
-    text-align: left;
-    color: inherit;
-    text-decoration: none;
-    background:  #faf1e0;
-    border-radius: 10px;
-    transition: color 0.15s ease, border-color 0.15s ease;
-  }
-  
-  .card img {
-  
-      height: 50px;
-      transition: transform 0.5s ease-out;
-      perspective: 500px;
-  
-  }
-  
-  
-  
-  .card:hover,
-  .card:focus,
-  .card:active {
-    color:#657c5b;
-    border-color: #657c5b;
-    text-decoration: none;
 
-  }
-  
-  .card h3 {
-    margin: 0 0 1rem 0;
-    font-size: 1.5rem;
-  }
-  
-  .card p {
-    margin: 0;
-    font-size: 1.25rem;
-    line-height: 1.5;
-  }
-  
-  .logo {
-    height: 1em;
-  }
-  
-  .headshot {
-    margin: 1rem;
-    border: 3px solid black;
-    border-radius: 10px;
-    position: relative;
+.paper:hover::before {
+    background: #33344e;
+}
 
-  }
+.paper:hover ~ .paper img{
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    filter: none;
+}
+
+.paper img:hover {
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    filter: none;
+ }
+
   
-  .headshot img {
-  height: 300px;
-  transition: transform 0.5s ease-out;
-  perspective: 500px;
-  position: relative;
-  z-index: -1;
-  
-  }
-  
-  @media (max-width: 600px) {
-    .grid {
-      width: 100%;
-      flex-direction: column;
-    }
-  }
-  
+.card {
+margin: 1rem;
+flex-basis: 45%;
+padding: 1.5rem;
+text-align: left;
+color: inherit;
+text-decoration: none;
+background:  #faf1e0;
+border-radius: 10px;
+transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.card img {
+    height: 50px;
+    transition: transform 0.5s ease-out;
+    perspective: 500px;
+}
+
+
+
+.card:hover,
+.card:focus,
+.card:active {
+color:#657c5b;
+border-color: #657c5b;
+text-decoration: none;
+
+}
+
+.card h3 {
+margin: 0 0 1rem 0;
+font-size: 1.5rem;
+}
+
+.card p {
+margin: 0;
+font-size: 1.25rem;
+line-height: 1.5;
+}
+
+.logo {
+height: 1em;
+}
+
+.headshot {
+margin: 1rem;
+border: 3px solid #33344e;
+border-radius: 10px;
+position: relative;
+
+}
+
+.headshot img {
+height: 300px;
+transition: transform 0.5s ease-out;
+perspective: 500px;
+position: relative;
+z-index: -1;
+
+}
+
+/* .button {
+margin: 1rem;
+flex-basis: 45%;
+padding: 1.5rem;
+text-align: left;
+color: inherit;
+text-decoration: none;
+background:  #faf1e0;
+border-radius: 10px;
+transition: color 0.15s ease, border-color 0.15s ease;
+
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+color:#657c5b;
+border-color: #657c5b;
+text-decoration: none;
+} */
+
+@media (max-width: 600px) {
+.grid {
+    width: 100%;
+    flex-direction: column;
+}
+}

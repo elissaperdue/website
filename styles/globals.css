@@ -4,13 +4,18 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background: #57787b;
+  background-color: #e9c46a;
+
   /* font-family: 'Open Sans', sans-serif; */
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+h1 {
+  font-size: 5px;
 }
 
 
@@ -22,4 +27,6 @@ a {
 * {
   font-family: 'Roboto Mono', monospace;
   box-sizing: border-box;
+  color: #33344e; 
+
 }

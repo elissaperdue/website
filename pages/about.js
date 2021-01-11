@@ -25,10 +25,16 @@ export default function About() {
            <cols>
       
            <a className={styles.paper}>
-            <h3><img alt="" src={"usc-logo.png"} height="50"/></h3>
+            <h3><img alt="" src={"usc.png"} height="50"/></h3>
             <p>Bachelors of Science, Computer Science</p>
             <p>Expected Grad: May 2022</p>
           </a>
+
+          <a className={styles.paper}>
+            <h3><img alt="" src={"ng.svg"} height="50"/></h3>
+            <p>Software Engineer Intern</p>
+          </a>
+
           <a className={styles.paper}>
             <alignR>
                 <h3><img alt="" src={"hacksc_logo.png"} height="50"/></h3>
@@ -40,26 +46,33 @@ export default function About() {
             </alignR>
       
             <alignR>
-                <p>Vice President</p> 
-                <p>2020-Present</p>
-            </alignR>
-            <alignR>
                 <p>Sponsorship Lead</p>  
                 <p>2019-Present</p>
             </alignR>
+            <alignR>
+                <p>Vice President</p> 
+                <p>2020-Present</p>
+            </alignR>
+           
             <alignR>
                 <p>Engineering</p> 
                 <p>2020-Present</p>
             </alignR>
            
           </a>
-          
-              
+
+         
+
             </cols>
-     
-            <div class={styles.headshot}>
+        <cols>
+        {/* <div class={styles.headshot}>
                     <img alt="" src="headshot.jpg" />
-            </div>
+            </div> */}
+            <button>
+                Download PDF
+            </button>
+        </cols>
+            
         </div> 
  
     </div>
