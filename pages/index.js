@@ -35,34 +35,72 @@ export default function Home() {
           <a
             href="https://hacksc.com/"
             target="_blank"
-            className={styles.card}
+            className={styles.paper}
           >
-            <h3><img alt="" src={"hacksc_logo.png"} /></h3>
-            <p>
-              VP and Sponsorship lead for USC's premier annual hackathon
-            </p>
-            
-
-
+            <info>
+              <div>
+              <h3><img alt="" src={"hacksc_logo.png"} height={45} /></h3>
+              <p>
+                Full stack developer
+              </p>
+              </div>
+              <tagbox>
+                <tag>CSS</tag>
+                <tag1>TypeScript</tag1>
+                <tag2>JavaScript</tag2>
+                <tag1>Vercel</tag1>
+                <tag>MySQL</tag>
+              </tagbox>
+            </info>
+           
           </a>
 
-          <a className={styles.card}>
-            <h3><img alt="" src={"Amazon-Logo.png"} /></h3>
+          
+
+          {/* <a className={styles.paper}>
+            <h3><img alt="" src={"Amazon-Logo.png"} height={30}/></h3>
             <p>Incoming SDE intern at Amazon NYC Summer 2021</p>
           </a>
 
           <a
             href="https://www.airforce-technology.com/projects/uh1y-huey/"
             target="_blank"
-            className={styles.card}
+            className={styles.paper}
           >
-            <h3><img alt="" src={"ng.svg"} /></h3>
+            <h3><img alt="" src={"ng.svg"} height={30} /></h3>
             <p>Summer SWE Intern on H-1 Helicopter Woodland Hills, CA</p>
+          </a> */}
+
+          <a href="https://github.com/greengro/FitBet" target="_blank" className={styles.paper}>
+            <info>
+            <div>
+            <h3><img alt="" src={"fitbit.png"} height={40}/></h3>
+            <p>Full Stack Developer </p>
+            </div>
+            <tagbox>
+                <tag>Django</tag>
+                <tag1>Postgres</tag1>
+                <tag>Python</tag>
+                <tag2>Java</tag2>
+             
+            </tagbox>
+
+            </info>
           </a>
 
-          <a href="https://github.com/greengro/FitBet" target="_blank" className={styles.card}>
-            <h3><img alt="" src={"fitbit.png"} /></h3>
-            <p>Fitness betting app to help reach daily step goals </p>
+          <a href="https://devpost.com/software/spacetag" target="_blank" className={styles.paper}>
+            <info>
+              <div>
+                <h4><b>  &#60; Space Tag &#62; </b></h4>
+                <p>Front End Developer </p>
+              </div>
+              <tagbox>
+                <tag2>GCP API</tag2>
+                <tag1>Swift</tag1>
+              </tagbox>
+
+            </info>
+          
           </a>
 
 

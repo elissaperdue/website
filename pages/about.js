@@ -15,6 +15,7 @@ export default function About() {
             <title>Elissa Perdue</title>
             <link rel="icon" href="/ep_favicon.png" />
         </Head>
+
         <div class={styles.topnav}>
             <a href="/">Home</a>
             <a href="about">About</a>
@@ -32,52 +33,48 @@ export default function About() {
 
           <a className={styles.paper}>
             <info>
-                <h3><img alt="" src={"hacksc_logo.png"} height="50"/></h3>
-                <a 
-                href="https://github.com/HackSC" target="_blank"
-                >
-                <img alt="" src={"GitHub-Mark.png"} height="20"/>
-                </a>
-            </info>
-      
-            <info>
-                <p>Sponsorship Lead</p>  
-                <p>2019-Present</p>
+            <h3><img alt="" src={"hacksc_logo.png"} height="50"/></h3>
+            <h3><img alt="" src={"GitHub-Mark.png"} height="30"/></h3>
+
             </info>
             <info>
-                <p>Vice President</p> 
-                <p>2020-Present</p>
+                <p>Vice President</p>
+                <p>2020-present</p>
             </info>
-           
             <info>
-                <p>Engineering</p> 
-                <p>2020-Present</p>
+                <p>Engineer</p>
+                <p>2020-present</p>
             </info>
-           
+            <info>
+                <p>Sponsorship Lead</p>
+                <p>2019-present</p>
+            </info>
+          </a>
+
+         
+
+          <a className={styles.paper}>
+            <img alt="" src={"Amazon-Logo.png"} height="50"/>
+            <info>
+                <p>Incoming SDE Intern</p>
+                <p>Summer 2021</p>
+            </info>
           </a>
 
           <a className={styles.paper}>
-            {/* <h3><img alt="" src={"Amazon-Logo.png"} height="50"/></h3>
-            <p>Incoming SDE Intern</p> */}
-          </a>
+            <img alt="" src={"ng.svg"} height="50"/>
+            <info>
+                <p>Software Engineer Intern</p>
+                <p>Summer 2020</p>
+            </info>
 
-          <a className={styles.paper}>
-            <h3><img alt="" src={"Amazon-Logo.png"} height="50"/></h3>
-            <p>Incoming SDE Intern</p>
-          </a>
-
-          <a className={styles.paper}>
-            <h3><img alt="" src={"ng.svg"} height="50"/></h3>
-            <p>Software Engineer Intern</p>
           </a>
 
          </cols>
-        <cols>
-        {/* <div class={styles.headshot}>
-                    <img alt="" src="headshot.jpg" />
-            </div> */}
-            
-        </cols>
+         <personal-info>
+            Junior at the University of Southern California. Originally from the DC area. 
+            I love being a hackathon organizer at HackSC and working on 
+         </personal-info>
             
         </div> 
  

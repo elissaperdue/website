@@ -30,6 +30,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 1;
   /* border: 1px solid red; */
 }
 
@@ -40,6 +42,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
   /* border: 1px solid white; */
 
 }
@@ -126,48 +129,131 @@
   margin-top: 3rem;
 }
 
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  background:  #faf1e0;
+/* Diagonal stacked paper effect */
+.paper {
+  /* background-color: #faf1e0; */
+  /* Need position to allow stacking of pseudo-elements */
+  position: relative;
+  /* Padding for demo purposes */
+  padding: 30px;
+  margin: 10px;
+  width: 550px;
+}
+
+.paper,
+.paper::before{
+  /* box-shadow: 2px 1px 1px rgba(0,0,0,0.15); */
   border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  border: 2px solid #33344e;
+  background-color: #fff9ea;
+  }
+
+.paper::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
-.card img {
+/* Second sheet of paper */
+.paper::before {
+  right: 12px;
+  top: 12px;
+  z-index: -1;
+}
 
-	height: 50px;
-	transition: transform 0.5s ease-out;
+
+.paper img {
+  /* -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);*/
+  transition: transform 0.5s ease-out;
   perspective: 500px;
-
 }
 
-
-
-.card:hover,
-.card:focus,
-.card:active {
-  color:#657c5b;
-  border-color: #657c5b;
-  text-decoration: none;
-
-
-}
-
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
+.paper p {
+  color: #33344e;
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
 }
+
+.paper info {
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: right;
+}
+
+.paper tight {
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: right;
+}
+
+.paper tag{
+  padding: 3px;
+  margin: 10px;
+  border-radius: 5px;
+  background: #9cafd8;
+  /* background: lightskyblue;  */
+}
+.paper tag1{
+  padding: 3px;
+  margin: 10px;
+  border-radius: 5px;
+  background: #dab9d8;
+  /* background: lightskyblue;  */
+}
+.paper tag2{
+  padding: 3px;
+  margin: 10px;
+  border-radius: 5px;
+  background: #b8daaa;
+  /* background: lightskyblue;  */
+}
+
+
+.paper dates {
+  justify-content: right;
+}
+
+
+.paper:hover,
+.paper:focus,
+.paper:active {
+text-decoration: none;
+}
+
+.paper:hover::before {
+  background: #33344e;
+}
+
+.paper:hover ~ .paper img{
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  filter: none;
+}
+
+.paper img:hover {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  filter: none;
+}
+
+.paper tagbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 200px;
+}
+
 
 .logo {
   height: 1em;
