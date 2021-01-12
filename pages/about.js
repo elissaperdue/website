@@ -73,7 +73,6 @@ export default function About() {
          </cols>
          <personal-info>
             Junior at the University of Southern California. Originally from the DC area. 
-            I love being a hackathon organizer at HackSC and working on 
          </personal-info>
             
         </div> 
