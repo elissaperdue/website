@@ -95,9 +95,9 @@
 }
 
 .title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+  margin-bottom: 15px;
+  line-height: 1.00;
+  font-size: 3.5rem;
 }
 
 .title,
@@ -124,9 +124,13 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 1000px;
+  margin-top: 30px;
+}
 
-  max-width: 800px;
-  margin-top: 3rem;
+.project {
+  border-radius: 2px;
+  margin-top: 40px;
 }
 
 /* Diagonal stacked paper effect */
@@ -137,7 +141,8 @@
   /* Padding for demo purposes */
   padding: 30px;
   margin: 10px;
-  width: 550px;
+  width: 300px;
+  height: 250px;
 }
 
 .paper,
@@ -178,9 +183,9 @@
 }
 
 .paper info {
-  padding: 0 0.5rem;
+  padding: 0 0rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: right;
 }
@@ -193,23 +198,33 @@
   align-items: right;
 }
 
+.paper tagbox {
+  padding-top:50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 300px;
+}
+
 .paper tag{
   padding: 3px;
-  margin: 10px;
+  margin: 2px;
   border-radius: 5px;
   background: #9cafd8;
   /* background: lightskyblue;  */
 }
 .paper tag1{
   padding: 3px;
-  margin: 10px;
+  margin: 2px;
   border-radius: 5px;
   background: #dab9d8;
   /* background: lightskyblue;  */
 }
 .paper tag2{
   padding: 3px;
-  margin: 10px;
+  margin: 2px;
   border-radius: 5px;
   background: #b8daaa;
   /* background: lightskyblue;  */
@@ -245,14 +260,7 @@ text-decoration: none;
   filter: none;
 }
 
-.paper tagbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: 200px;
-}
+
 
 
 .logo {

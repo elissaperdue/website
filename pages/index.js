@@ -22,7 +22,6 @@ export default function Home() {
 
 
       <main className={styles.main}>
-
         <h1 className={styles.title}>
           <a href="https://website-git-master.elissaperdue.vercel.app/">elissa perdue </a> 
           <br/>
@@ -30,7 +29,7 @@ export default function Home() {
         </h1>
 
 
-
+        <div className={styles.project}><h4><b>Recent Projects</b></h4></div>
         <div className={styles.grid}>
           <a
             href="https://hacksc.com/"
@@ -41,7 +40,7 @@ export default function Home() {
               <div>
               <h3><img alt="" src={"hacksc_logo.png"} height={45} /></h3>
               <p>
-                Full stack developer
+                Full stack
               </p>
               </div>
               <tagbox>
@@ -75,7 +74,7 @@ export default function Home() {
             <info>
             <div>
             <h3><img alt="" src={"fitbit.png"} height={40}/></h3>
-            <p>Full Stack Developer </p>
+            <p>Full Stack</p>
             </div>
             <tagbox>
                 <tag>Django</tag>
@@ -92,7 +91,7 @@ export default function Home() {
             <info>
               <div>
                 <h4><b>  &#60; Space Tag &#62; </b></h4>
-                <p>Front End Developer </p>
+                <p>Front End</p>
               </div>
               <tagbox>
                 <tag2>GCP API</tag2>
