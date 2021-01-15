@@ -47,7 +47,7 @@ export default function Home() {
                 <tag>CSS</tag>
                 <tag1>TypeScript</tag1>
                 <tag2>JavaScript</tag2>
-                <tag1>Vercel</tag1>
+                <tag1>Next.js</tag1>
                 <tag>MySQL</tag>
               </tagbox>
             </info>
@@ -78,7 +78,7 @@ export default function Home() {
             </div>
             <tagbox>
                 <tag>Django</tag>
-                <tag1>Postgres</tag1>
+                <tag1>PostgreSQL</tag1>
                 <tag>Python</tag>
                 <tag2>Java</tag2>
              
