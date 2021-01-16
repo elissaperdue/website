@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Box, Container } from 'react-layout-components';
+import Image from 'next/image'
 
 
 
@@ -23,7 +24,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          <a href="https://website-git-master.elissaperdue.vercel.app/">elissa perdue </a> 
+          <a href="about">elissa perdue </a> 
           <br/>
           student and software developer
         </h1>
@@ -38,7 +39,7 @@ export default function Home() {
           >
             <info>
               <div>
-              <h3><img alt="" src={"hacksc_logo.png"} height={45} /></h3>
+              <h3><Image alt="" src={"/hacksc_logo.png"} height={45} width={130} /></h3>
               <p>
                 Full stack
               </p>
@@ -73,7 +74,7 @@ export default function Home() {
           <a href="https://github.com/greengro/FitBet" target="_blank" className={styles.paper}>
             <info>
             <div>
-            <h3><img alt="" src={"fitbit.png"} height={40}/></h3>
+            <h3><Image alt="" src={"/fitbit.png"} width={55} height={40}/></h3>
             <p>Full Stack</p>
             </div>
             <tagbox>

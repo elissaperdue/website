@@ -5,6 +5,7 @@ import { Navbar, Nav, NavDropdown, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Box, Container} from 'react-layout-components';
 import Flexbox from 'flexbox-react';
+import Image from 'next/image'
 
 
 export default function About() {
@@ -33,7 +34,7 @@ export default function About() {
 
           <a className={styles.paper}>
             <info>
-            <h3><img alt="" src={"hacksc_logo.png"} height="50"/></h3>
+            <h3><Image alt="" src={"/hacksc_logo.png"} height="50" width="150"/></h3>
             <h3><img alt="" src={"GitHub-Mark.png"} height="30"/></h3>
 
             </info>
@@ -54,7 +55,7 @@ export default function About() {
          
 
           <a className={styles.paper}>
-            <img alt="" src={"Amazon-Logo.png"} height="50"/>
+            <Image alt="" src={"/Amazon-Logo.png"} height="50" width="90"/>
             <info>
                 <p>Incoming SDE Intern</p>
                 <p>Summer 2021</p>
@@ -62,7 +63,7 @@ export default function About() {
           </a>
 
           <a className={styles.paper}>
-            <img alt="" src={"ng.svg"} height="50"/>
+            <Image alt="" src={"/ng.svg"} height="55" width="145"/>
             <info>
                 <p>Software Engineer Intern</p>
                 <p>Summer 2020</p>
